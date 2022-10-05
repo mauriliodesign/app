@@ -14,6 +14,7 @@ function App() {
                     <Map />
                 </Wrapper>
             </div>
+            <button type="submit">Criar rolê</button>
         </div>
     );
 }
