@@ -1,20 +1,17 @@
-import { Wrapper, Status } from "@googlemaps/react-wrapper";
-import Map from "./components/Map";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import Role from "./pages/Role/Role";
 import "./styles.css";
 
 function App() {
-    const render = (status: Status) => {
-        return <h1>{status}</h1>;
-    };
-
     return (
-        <div className="App">
-            <div style={{ height: "80vh", width: "60vw", margin: "auto" }}>
-                <Wrapper apiKey={"AIzaSyDENelulmyQiu72laCFfCs7Kwa1ARKMDLc"} render={render}>
-                    <Map />
-                </Wrapper>
-            </div>
-            <button type="submit">Criar rolê</button>
+        <div className="app">
+            <BrowserRouter>
+                <Routes>
+                    <Route index element={<Home />} />
+                    <Route path="role/:groupId" element={<Role />} />
+                </Routes>
+            </BrowserRouter>
         </div>
     );
 }

@@ -1,6 +1,11 @@
-import { useEffect, useRef, useState } from "react";
+import { FC,  useEffect, useRef, useState } from "react";
+import Marker from "./Marker";
 
-const Maps = () => {
+type Props = {
+    markPosition?: google.maps.LatLng;
+};
+
+const Maps: FC<Props> = ({ markPosition }) => {
     const ref = useRef<HTMLDivElement>(null);
     const [map, setMap] = useState<google.maps.Map>();
     const [lat, setLat] = useState<number>(33.669445);
@@ -27,7 +32,11 @@ const Maps = () => {
         }
     }, [lat, lng, map]);
 
-    return <div ref={ref} id="map" style={{ height: "100%", width: "100%" }} />;
+    return (
+        <div ref={ref} id="map" style={{ height: "100%", width: "100%" }}>
+            <Marker position={markPosition} map={map} />
+        </div>
+    );
 };
 
 export default Maps;
