@@ -1,11 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 
-const Map = () => {
-    const ref = useRef();
-    const center = { lat: -34.397, lng: 150.644 };
-    const zoom = 4;
-
-    const [map, setMap] = useState();
+const Maps = () => {
+    const ref = useRef<HTMLDivElement>(null);
+    const [map, setMap] = useState<google.maps.Map>();
 
     useEffect(() => {
         if (ref.current && !map) {
@@ -16,7 +13,7 @@ const Map = () => {
         }
     }, [ref, map]);
 
-    return <div ref={ref} id="map" style={{ height: "100%", width: "100%", margin: "auto" }} />;
+    return <div ref={ref} id="map" style={{ height: "100%", width: "100%" }} />;
 };
 
-export default Map;
+export default Maps;

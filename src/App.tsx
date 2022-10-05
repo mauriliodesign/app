@@ -9,9 +9,11 @@ function App() {
 
     return (
         <div className="App">
-            <Wrapper apiKey={"AIzaSyDENelulmyQiu72laCFfCs7Kwa1ARKMDLc"} render={render}>
-                <Map />
-            </Wrapper>
+            <div style={{ height: "80vh", width: "60vw", margin: "auto" }}>
+                <Wrapper apiKey={"AIzaSyDENelulmyQiu72laCFfCs7Kwa1ARKMDLc"} render={render}>
+                    <Map />
+                </Wrapper>
+            </div>
         </div>
     );
 }
