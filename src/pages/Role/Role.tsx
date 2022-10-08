@@ -16,9 +16,9 @@ const Role = () => {
         });
     };
 
-    useEffect(() => {
-        getPosition();
-    });
+    // useEffect(() => {
+    //     getPosition();
+    // });
 
     return (
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>

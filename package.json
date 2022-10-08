@@ -1,30 +1,42 @@
 {
-    "name": "vite-number-conversion",
-    "private": true,
-    "version": "0.0.0",
-    "type": "module",
-    "scripts": {
-        "dev": "vite",
-        "build": "tsc && vite build",
-        "preview": "vite preview"
-    },
-    "dependencies": {
-        "@emotion/react": "^11.10.4",
-        "@emotion/styled": "^11.10.4",
-        "@googlemaps/react-wrapper": "^1.1.35",
-        "@mui/material": "^5.10.8",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "react-router-dom": "^6.4.1",
-        "uuid": "^9.0.0"
-    },
-    "devDependencies": {
-        "@types/google.maps": "^3.50.2",
-        "@types/react": "^18.0.21",
-        "@types/react-dom": "^18.0.6",
-        "@types/uuid": "^8.3.4",
-        "@vitejs/plugin-react": "^2.1.0",
-        "typescript": "^4.8.4",
-        "vite": "^3.1.4"
-    }
+  "name": "vite-number-conversion",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@googlemaps/react-wrapper": "^1.1.35",
+    "@mui/material": "^5.10.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.1",
+    "styled-components": "^5.3.6",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-interactions": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/builder-vite": "^0.2.3",
+    "@storybook/react": "^6.5.12",
+    "@storybook/testing-library": "^0.0.13",
+    "@types/google.maps": "^3.50.2",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "@types/uuid": "^8.3.4",
+    "@vitejs/plugin-react": "^2.1.0",
+    "babel-loader": "^8.2.5",
+    "typescript": "^4.8.4",
+    "vite": "^3.1.4"
+  }
 }
