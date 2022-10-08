@@ -1,19 +1,16 @@
-import { styled, TextField } from "@mui/material";
+import { TextField as MUITextField, TextFieldProps } from "@mui/material";
+import { FC } from "react";
+import styled from "styled-components";
 
-type InputTypes = {
-    label: string,
-    variant: "standard" | "filled" | "outlined" | undefined
-}
+// const TextField = styled(MUITextField)`
+//     input {
+//         background: transparent;
+//         border-radius: 20px;
+//         border: 1px solid #598392;
+//         min-width: 31.25rem;
+//     }
+// `;
 
-const Input = ({label, variant}: InputTypes) => (
-    <div className="input-wrapper">
-        <TextField id="outlined-basic" label={label} variant={variant} sx={{
-            background: 'transparent',
-            borderRadius: '20px',
-            border: "1px solid #598392",
-            minWidth: "31.25rem"
-        }}/>
-    </div>
-)
+const Input: FC<TextFieldProps> = ({ ...props }) => <MUITextField id="outlined-basic" {...props} />;
 
 export default Input;

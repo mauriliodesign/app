@@ -1,15 +1,24 @@
-import { Button } from "@mui/material"
+import { Button } from "@mui/material";
+import { FC } from "react";
 
-const SocialMediaLogin = (platform: string) => {
+type SocialMediaLoginProps = {
+    platform: string;
+};
+
+const SocialMediaLogin: FC<SocialMediaLoginProps> = ({ platform }) => {
     return (
-        <Button sx={{
-            minWidth: '21.813rem',
-            border: '1px solid #608794',
-            background: 'rgba(237, 246, 249, 0.2)',
-            borderRadius: '16px',
-            minHeight: '3.25rem'
-        }}>Continue with {platform}</Button>
-    )
-}
+        <Button
+            sx={{
+                minWidth: "21.813rem",
+                border: "1px solid #608794",
+                background: "rgba(237, 246, 249, 0.2)",
+                borderRadius: "16px",
+                minHeight: "3.25rem",
+            }}
+        >
+            Continue with {platform}
+        </Button>
+    );
+};
 
 export default SocialMediaLogin;

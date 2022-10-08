@@ -1,6 +1,5 @@
 import { Container, Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import React, { useState, useEffect } from 'react';
 import { v1 as uuidv1 } from "uuid";
 
 const Home = () => {
@@ -11,7 +10,7 @@ const Home = () => {
 
     return (
         <Container style={{ display: "flex", justifyContent: "center", height: "100%", alignItems: "center" }}>
-            <Button variant="contained" onClick={navigateToGroup}>
+            <Button onClick={navigateToGroup} variant="text">
                 Criar rolê
             </Button>
         </Container>
