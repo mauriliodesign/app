@@ -1,10 +1,14 @@
-import { ThemeProvider } from "@mui/material";
+import { styled, ThemeProvider } from "@mui/material";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 import Role from "./pages/Role/Role";
 import { theme } from "./style/theme";
 import "./styles.css";
+
+const styledApp = styled('div')`
+    background-image: url(./assets/background.png);
+`;
 
 const App = () => (
     <div className="app">

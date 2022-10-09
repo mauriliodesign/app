@@ -6,7 +6,7 @@ export const theme = createTheme({
             main: "#FA824C",
         },
         secondary: {
-            main: "#FFFF00",
+            main: "#598392",
         },
     },
     shape: {
@@ -16,7 +16,17 @@ export const theme = createTheme({
         MuiButton: {
             defaultProps: {
                 variant: "contained",
+                style: {
+                    marginTop: "2rem",
+                }
             },
         },
+        MuiTextField: {
+            defaultProps: {
+                style: {
+                    margin: ".8rem 0",
+                }
+            }
+        }
     },
 });

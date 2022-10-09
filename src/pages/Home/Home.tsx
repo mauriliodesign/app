@@ -10,7 +10,7 @@ const Home = () => {
 
     return (
         <Container style={{ display: "flex", justifyContent: "center", height: "100%", alignItems: "center" }}>
-            <Button onClick={navigateToGroup} variant="text">
+            <Button onClick={navigateToGroup}>
                 Criar rolê
             </Button>
         </Container>

@@ -6,7 +6,7 @@ const SignUp = () => {
             background: '#FA824C',
             color: '#FFF',
             borderRadius: '12px',
-            minWidth: '15.438rem',
+            width: '15.438rem',
             minHeight: '3.688rem',
             textTransform: 'unset',
             fontWeight: 'bold',

@@ -7,6 +7,6 @@ export default {
     component: SocialMediaLogin,
 } as ComponentMeta<typeof SocialMediaLogin>;
 
-const Template: ComponentStory<typeof SocialMediaLogin> = () => <SocialMediaLogin platform="AAAA" />;
+const Template: ComponentStory<typeof SocialMediaLogin> = () => <SocialMediaLogin platform="Facebook" />;
 
 export const SocialMediaLoginAction = Template.bind({});
