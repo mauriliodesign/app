@@ -1,7 +1,7 @@
 import { Status, Wrapper } from "@googlemaps/react-wrapper";
 import Map from "../../components/Map";
 import { Button } from "@mui/material";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const Role = () => {
     const [markPosition, setMarkPosition] = useState<google.maps.LatLng>();
@@ -15,10 +15,6 @@ const Role = () => {
             setMarkPosition(new google.maps.LatLng({ lat: latitude, lng: longitude }));
         });
     };
-
-    // useEffect(() => {
-    //     getPosition();
-    // });
 
     return (
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>

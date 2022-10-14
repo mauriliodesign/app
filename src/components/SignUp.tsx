@@ -11,6 +11,7 @@ const SignUp = () => {
             textTransform: 'unset',
             fontWeight: 'bold',
             fontSize: '1.25rem',
+            margin: "0 auto",
             "&:hover": {
                 background: '#E15554'
             }
